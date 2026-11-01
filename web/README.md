@@ -52,6 +52,9 @@ The gateway allows cross-origin calls (CORS) for exactly this local setup.
 
 ## Deployment (AWS)
 
+> **Try it:** change the header text in `site/index.html`, commit and push. Only `paylab-web-pipeline` runs
+> (its trigger watches `web/**`), and the live page shows your change about 4 minutes later.
+
 This folder is deployed by its own **CodePipeline** `paylab-web-pipeline` on every push to `main` that changes `web/`:
 
 ```
